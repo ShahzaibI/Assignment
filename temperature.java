@@ -35,28 +35,28 @@ public class temperature
         String x = "yes";
         do
         {
-        System.out.println("1.Multan");
-        System.out.println("2.Lahore");
-        System.out.println("3.Islamabad");
-        System.out.println("4.Faisalabad");
-        System.out.println("5.Vehari");
-        System.out.println("6.Mailsi");
-        System.out.println("7.Peshawar");
-        System.out.println("8.Quetta");
-        System.out.println("9.Karachi");
-        System.out.println("10.Sialkot");
-        System.out.println("\t\t\tChoose one city!");
-        System.out.print("Enter your choice between 1 to 10 = ");
-        choice = sc.nextInt();
-        if(choice>=1 && choice<=10)
-        {
-            temperature obj = new temperature();
-            obj.calculate_temperature(choice,city);
-        }
-        else
-        {
-            System.out.println("You enter wrong number!");
-        }
+            System.out.println("1.Multan");
+            System.out.println("2.Lahore");
+            System.out.println("3.Islamabad");
+            System.out.println("4.Faisalabad");
+            System.out.println("5.Vehari");
+            System.out.println("6.Mailsi");
+            System.out.println("7.Peshawar");
+            System.out.println("8.Quetta");
+            System.out.println("9.Karachi");
+            System.out.println("10.Sialkot");
+            System.out.println("\t\t\tChoose one city!");
+            System.out.print("Enter your choice between 1 to 10 = ");
+            choice = sc.nextInt();
+            if(choice>=1 && choice<=10)
+            {
+                temperature obj = new temperature();
+                obj.calculate_temperature(choice,city);
+            }
+            else
+            {
+                System.out.println("You enter wrong number!");
+            }
             System.out.println("You check again?\n yes or no.");
             System.out.print("Enter your choice = ");
             x=sc.next();
